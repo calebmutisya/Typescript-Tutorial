@@ -16,4 +16,14 @@ let isAlive : boolean = true;
 
 isAlive.valueOf();
 
+// any
+
+let hero: string;
+
+function getHero() {
+    return "Spiderman";
+}
+
+hero = getHero();
+
 export {}

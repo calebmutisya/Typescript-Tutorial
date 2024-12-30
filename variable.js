@@ -9,3 +9,9 @@ age.toFixed();
 // boolean
 var isAlive = true;
 isAlive.valueOf();
+// any
+var hero;
+function getHero() {
+    return "Spiderman";
+}
+hero = getHero();
