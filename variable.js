@@ -1,4 +1,11 @@
+"use strict";
+// string
+exports.__esModule = true;
 var greetings = "Hello World";
-var age = 20;
-var isAlive = true;
 console.log(greetings);
+// number
+var age = 20;
+age.toFixed();
+// boolean
+var isAlive = true;
+isAlive.valueOf();

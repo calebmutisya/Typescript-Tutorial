@@ -1,7 +1,19 @@
+// string
+
 let greetings : string = "Hello World";
-let age : number = 20;
-let isAlive : boolean = true;
 
 console.log(greetings);
+
+// number
+
+let age : number = 20;
+
+age.toFixed();
+
+// boolean
+
+let isAlive : boolean = true;
+
+isAlive.valueOf();
 
 export {}
