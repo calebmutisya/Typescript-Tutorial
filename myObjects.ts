@@ -37,13 +37,16 @@ function creatCourse() :{name: string, lessons: number, price: number} {
 // Type Aliases
 //Creating a type
 type vehicle = {
+    readonly _id: number,// Readonly
     name: string,
     year: number,
     make: string,
-    model: string
+    model: string,
+    serialNo?: string // Optional
 }
 
 const car: vehicle = {
+    _id: 1,
     name: "Civic",
     year: 2020,
     make: "Honda",
