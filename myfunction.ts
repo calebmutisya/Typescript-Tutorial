@@ -29,4 +29,38 @@ function loginUser(email: string, password: number) {
 loginUser("c@l.com", 1234)
 console.log(loginUser("c@l.com", 1234))
 
+
+// Returning more than one type
+function getValue(myVal: number): boolean {
+    if (myVal > 5) {
+        return true
+    } else {
+        return false
+    }
+}
+
+getValue(6)
+console.log(getValue(6))
+
+// Use in Arrow function
+const getHello = (s: string): string => {
+    return "Hello " + s
+}
+
+const heros = [ "thor", "spiderman", "ironman" ]
+
+heros.map(hero => {
+    return `Hero is ${hero}`
+})
+
+// void - does not return anything
+function consoleError(errmsg: string): void {
+    console.log(errmsg)
+}
+
+// never - never returns a value
+function handleError(errmsg: string): never {
+    throw new Error(errmsg)
+}
+
 export {}
